@@ -51,6 +51,8 @@ public class Ejemplo09 {
         } while (bandera); // (bandera==true)
 
         // promedio = suma / contador_calificaciones;
+        // Permite ingresar valores unicamente enteros a traves del teclado,
+        // luego sacar el promedio de las mismas
         promedio = (double) suma / contador_calificaciones;
         cadenaFinal = String.format("%s\nPromedio de calificaciones: %.2f",
                 cadenaFinal,
