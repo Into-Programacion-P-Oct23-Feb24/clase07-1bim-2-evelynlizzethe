@@ -42,6 +42,8 @@ public class Ejemplo09 {
 
             // agrego valor al acumulador
             suma = suma + nota;
+            cadenaFinal = String.format("%sCalificacion %s del estudiante %s\n",
+                    cadenaFinal, nota, nombre);
             // agrego una unidad al contador para luego sacar el promedio
             contador_calificaciones = contador_calificaciones + 1;
 
@@ -61,7 +63,7 @@ public class Ejemplo09 {
 
         // promedio = suma / contador_calificaciones;
         promedio = (double) suma / contador_calificaciones;
-        cadenaFinal = String.format("%s Calificacion %s del estudiante %s\nPromedio de calificaciones: %.2f",
+        cadenaFinal = String.format("%s Calificacion %d del estudiante %s\nPromedio de calificaciones: %.2f",
                 cadenaFinal,
                 nota,
                 nombre,
